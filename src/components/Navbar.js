@@ -6,7 +6,7 @@ export default class Navbar extends Component {
         return (
             <nav className='nav'>
                 <div className='container flex-center'>
-                    <Link className='logo' to='/'><img src='./flohub-nb.png' alt="flohub Logo" height='40px'></img></Link>
+                    <Link className='logo' to='/'><img src='./logo_76.png' alt="flohub Logo" height='38px'></img></Link>
                     <span className='flex-grow'></span>
                     <span className='nav-items'>
                         <Link to="/login" className='btn btn-primary'>Sign in</Link>

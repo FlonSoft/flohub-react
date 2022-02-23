@@ -59,13 +59,13 @@ button {
 
 @media only screen and (min-width: 601px) {
   .container {
-      width: 96%;
+    width: 95%;
   }
 }
 
 @media only screen and (min-width: 993px) {
   .container {
-      width: 85%;
+    width: 85%;
   }
 }
 
@@ -81,8 +81,13 @@ button {
 }
 
 /* margins */
-.mt-1 { margin-top: 1rem; }
-.mb-1 { margin-top: 1rem; }
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-top: 1rem;
+}
 
 body {
   background-color: #000;
@@ -170,13 +175,29 @@ body {
 
 /* main */
 main {
-  min-height: calc(100vh - 3rem);
+  min-height: calc(100vh - 4.5rem);
 }
+
+.cards {
+  display: grid;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 0.5rem 0;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+/* footer */
 
 .footer {
   background-color: var(--nav-bg);
   color: var(--footer-text);
   font-size: 14px;
+  margin-top: 1.5rem;
 }
 
 .footer .container {
