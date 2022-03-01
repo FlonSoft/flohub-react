@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 var navTabsData = [
@@ -26,7 +26,7 @@ function navTabs(path) {
     });
     return (
         tmp
-    );
+    )
 }
 
 const Navbar = () => {

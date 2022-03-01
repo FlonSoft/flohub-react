@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Login extends Component {
-  render() {
+const Login = () => {
     document.title = "Login - flohub";
     return (
       <div>Login</div>
     )
-  }
 }
+
+export default Login
