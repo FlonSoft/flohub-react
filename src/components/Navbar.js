@@ -34,7 +34,7 @@ const Navbar = () => {
     return (
         <nav className='nav'>
             <div className='container flex-center'>
-                <Link className='logo' to='/'><img src='./logo_76.png' alt="flohub Logo" height='38px'></img></Link>
+                <a className='logo' href='/'><img src='./logo_76.png' alt="flohub Logo" height='38px'></img></a>
                 <span className='flex-grow'></span>
                 <span className='nav-items'>
                     <Link to="/login" className='btn btn-primary'>Sign in</Link>

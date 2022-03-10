@@ -11,7 +11,7 @@ const Login = () => {
                     <input className='input' type='password' placeholder='Password'></input>
                 </div>
                 <div className='mt-1'>
-                    <button className='btn outline'>Submit</button>
+                    <button className='btn btn-primary'>Submit</button>
                 </div>
             </form>
         </>
