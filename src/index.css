@@ -190,11 +190,6 @@ body {
   transition: box-shadow ease 0.115s;
 }
 
-.btn:not(.outline) {
-  -webkit-transition: background-color .17s ease, color .17s ease, box-shadow ease 0.115s;
-  transition: background-color .17s ease, color .17s ease, box-shadow ease 0.115s;
-}
-
 .btn:hover {
   cursor: pointer;
 }
