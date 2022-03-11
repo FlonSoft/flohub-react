@@ -187,6 +187,12 @@ body {
   border-radius: 5px;
   font-weight: 700;
   color: inherit;
+  transition: box-shadow ease 0.115s;
+}
+
+.btn:not(.outline) {
+  -webkit-transition: background-color .17s ease, color .17s ease, box-shadow ease 0.115s;
+  transition: background-color .17s ease, color .17s ease, box-shadow ease 0.115s;
 }
 
 .btn:hover {
@@ -229,6 +235,7 @@ body {
   border-radius: 5px;
   font-size: inherit;
   color: var(--body-text);
+  transition: box-shadow ease-out 0.115s;
 }
 
 .input:focus {
