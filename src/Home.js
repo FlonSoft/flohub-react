@@ -2,7 +2,7 @@ import React from 'react'
 import './Home.css'
 
 const Home = () => {
-  document.title = "flohub"
+  document.title = "flohub - Home"
   return (
     <>
       <div className='cards'>
