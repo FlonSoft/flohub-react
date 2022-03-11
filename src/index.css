@@ -11,7 +11,7 @@
   --footer-text: rgba(255, 255, 255, 0.6);
   --item-bg: rgb(0, 0, 0);
   --item-border: rgba(80, 80, 80, 0.75);
-  --active-shadow: 0px 0px 0px 2px #2485af;
+  --active-shadow: 0px 0px 0px 2px rgba(21, 112, 151, 0.92);
 }
 
 * {
@@ -226,7 +226,7 @@ body {
   box-sizing: border-box;
   background-color: var(--item-bg);
   border: 1px solid var(--item-border);
-  padding: calc(0.6rem - 1px) calc(0.75rem - 1px);
+  padding: calc(0.6rem - 1px) calc(0.85rem - 1px);
   border-radius: 5px;
   font-size: inherit;
   color: var(--body-text);
