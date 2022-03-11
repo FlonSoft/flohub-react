@@ -47,7 +47,7 @@ a:hover {
 }
 
 body {
-  font-family: 'Roboto', system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Jost', system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--body-text);
@@ -56,9 +56,9 @@ body {
   line-height: 1.15;
 }
 
-/* h1, h2, h3, .title {
+h1, h2, h3, .title {
   font-family: 'Spartan', sans-serif;
-} */
+}
 
 /* container */
 
