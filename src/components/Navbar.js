@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import searchIconWhite from '../icons/search_white_24dp.svg'
 
 var navTabsData = [
     {
@@ -35,9 +36,12 @@ const Navbar = () => {
         <nav className='nav'>
             <div className='container flex-center'>
                 <a className='logo' href='/'><img src='./logo_76.png' alt="flohub Logo" height='38px'></img></a>
-                <span className='flex-grow'></span>
+                <span class="uwu">
+                    <input class="input search no-border" name="q" id="q" type="search" placeholder="Search"></input>
+                </span>
+                {/* <a class="button search-btn icon with-icon" href="./search.html" title="Search"><img src={searchIconWhite} alt="Search"></img></a> */}
                 <span className='nav-items'>
-                    <Link to="/login" className='btn btn-primary'>Sign in</Link>
+                    <Link to="/login" className='btn primary'>Sign in</Link>
                 </span>
             </div>
             <div className='nav-border'></div>

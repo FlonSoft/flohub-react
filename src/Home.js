@@ -1,8 +1,8 @@
 import React from 'react'
-import './Home.css'
+import './css/Home.css'
 
 const Home = () => {
-  document.title = "flohub - Home"
+  document.title = "flohub"
   return (
     <>
       <div className='cards'>

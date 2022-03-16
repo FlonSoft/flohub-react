@@ -8,7 +8,7 @@ const NoPage = () => {
             <h1 className='title'>Page Not Found</h1>
             <p>Sorry about that :(</p>
             <div className='mt-2'>
-                <Link to="/" className='btn btn-primary'>Go Home</Link>
+                <Link to="/" className='btn primary'>Go Home</Link>
             </div>
         </>
     )
