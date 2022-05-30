@@ -36,8 +36,8 @@ const Navbar = () => {
         <nav className='nav'>
             <div className='container flex-center'>
                 <a className='logo' href='/'><img src='./logo_76.png' alt="flohub Logo" height='38px'></img></a>
-                <span class="flex-center-full">
-                    <input class="input light search no-border" name="q" id="q" type="search" placeholder="Search"></input>
+                <span className="flex-center-full">
+                    <input className="input light search no-border" name="q" id="q" type="search" placeholder="Search"></input>
                 </span>
                 {/* <a class="button search-btn icon with-icon" href="./search.html" title="Search"><img src={searchIconWhite} alt="Search"></img></a> */}
                 <span className='nav-items'>
