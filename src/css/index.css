@@ -78,6 +78,7 @@ h2,
 h3,
 .title {
   font-family: "Spartan", sans-serif;
+  color: var(--body-color-full)
 }
 
 .no-border {
@@ -456,7 +457,7 @@ main {
 }
 
 .tags a:first-child {
-  background-color: var(--body-color);
+  background-color: var(--body-color-full);
   color: var(--item-bg);
 }
 
