@@ -34,7 +34,7 @@ class Login extends React.Component {
             },
             body: JSON.stringify(this.state)
         };
-        fetch('http://tunnel.flolon.cc/auth/login', fetchContent)
+        fetch('//tunnel.flolon.cc/auth/login', fetchContent)
             .then((response) => response.json())
             .then((data) => {
                 console.log(JSON.stringify(data))
