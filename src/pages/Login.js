@@ -33,23 +33,25 @@ class Login extends React.Component {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(this.state)
-        };
+        }
         fetch('//api.flohub.xyz/v1/auth/login', fetchContent)
             .then((response) => response.json())
             .then((data) => {
-                console.log(JSON.stringify(data))
                 if (data.status === 'authorized') {
                     console.log(data.status)
                     document.cookie = `sess=${data.sess}`
                     alert(`Logged in!`)
                 } else if (data.status === 'error') {
-                    alert(`Error: ${JSON.stringify(data.error)}`)
-                } else {
                     console.log(`Error: ${JSON.stringify(data)}`)
+                    alert(`Error: ${JSON.stringify(data.error)}`)
+                } else if (data.status === 'unauthorized') {
+                    console.log(`Wrong username or password.`)
+                    alert(`Wrong username or password.`)
                 }
             })
             .catch((error) => {
                 console.error('Error:', error)
+                alert(`Error: ${JSON.stringify(error)}`)
             })
     }
 
