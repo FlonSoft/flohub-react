@@ -30,11 +30,11 @@ class Login extends React.Component {
         const fetchContent = {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             },
             body: JSON.stringify(this.state)
         };
-        fetch('//tunnel.flolon.cc/auth/login', fetchContent)
+        fetch('//api.flohub.xyz/v1/auth/login', fetchContent)
             .then((response) => response.json())
             .then((data) => {
                 console.log(JSON.stringify(data))
