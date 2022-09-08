@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <section>
         <h1 className='title'>Comics</h1>
-        <div class="cards comic-cards">
+        <div className="cards comic-cards">
           <ComicCard></ComicCard>
         </div>
       </section>

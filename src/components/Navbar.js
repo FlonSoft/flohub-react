@@ -39,7 +39,7 @@ const Navbar = () => {
                 <span className="flex-center-full">
                     <input className="input light search no-border" name="q" id="q" type="search" placeholder="Search"></input>
                 </span>
-                {/* <a class="button search-btn icon with-icon" href="./search.html" title="Search"><img src={searchIconWhite} alt="Search"></img></a> */}
+                {/* <a className="button search-btn icon with-icon" href="./search.html" title="Search"><img src={searchIconWhite} alt="Search"></img></a> */}
                 <span className='nav-items'>
                     <Link to="/login" className='btn primary'>Sign in</Link>
                 </span>

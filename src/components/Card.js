@@ -44,7 +44,7 @@ export function VideoCard() {
         <div className="flex-center author">
           <a href="#">BigPawbs</a>
         </div>
-        <div class="flex-end">
+        <div className="flex-end">
           <div className="tags">
             <a href="#">MM</a>
             <a href="#">bdsm</a>

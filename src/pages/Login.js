@@ -60,9 +60,9 @@ class Login extends React.Component {
             <form onSubmit={this.handleSubmit}>
                 <h1 className='title'>Sign In</h1>
                 <div className='stacked mt-1'>
-                    <input name="username" className='input' type='text' placeholder='Username' autoFocus value={this.state.username}
+                    <input name="username" className='input' type='text' placeholder='Username' autoFocus autoComplete="username" value={this.state.username}
                         onChange={this.handleInputChange}></input>
-                    <input name="password" className='input' type='password' placeholder='Password' value={this.state.password}
+                    <input name="password" className='input' type='password' placeholder='Password' autoComplete='current-password' value={this.state.password}
                         onChange={this.handleInputChange}></input>
                 </div>
                 <div className='mt-1'>
