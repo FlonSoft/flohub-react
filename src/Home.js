@@ -1,6 +1,6 @@
 import React from 'react'
 import './css/Home.css'
-import Card, { ComicCard, VideoCard } from './components/Card'
+import { ComicCard, VideoCard } from './components/Card'
 
 export default function Home() {
   document.title = "flohub"

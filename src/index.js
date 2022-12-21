@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './css/index.css'
@@ -31,6 +31,8 @@ export default function App() {
       }
     })
   }
+
+  // const [isLoggedIn, setLoginState] = useState(true)
 
   useEffect(() => {
     checkSess()

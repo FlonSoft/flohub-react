@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import searchIconWhite from '../icons/search_white_24dp.svg'
 
@@ -17,7 +17,7 @@ var navTabsData = [
     }
 ]
 
-function navTabs(path) {
+const navTabs = (path) => {
     var tmp = []
     navTabsData.forEach(element => {
         var isActiveTab = ""
@@ -28,6 +28,25 @@ function navTabs(path) {
     return (
         tmp
     )
+}
+
+const NavMenu = () => {
+    const [isLoggedIn, setLoginState] = React.useState(false)
+    const handleLoginState = () => setLoginState(true)
+    // const handleLoginState = (state) => {
+    //     setLoginState(state)
+    //     console.log(isLoggedIn)
+    // }
+
+    if (isLoggedIn) {
+        return (
+            <>
+                <button className='btn primary' onClick={handleLoginState(false)}>Sign out</button>
+                <Link to="/login" className='btn primary' onClick={handleLoginState(true)}>Sign in</Link>
+            </>
+        )
+    }
+    return <Link to="/login" className='btn primary'>Sign in</Link>
 }
 
 const Navbar = () => {
@@ -41,7 +60,7 @@ const Navbar = () => {
                 </span>
                 {/* <a className="button search-btn icon with-icon" href="./search.html" title="Search"><img src={searchIconWhite} alt="Search"></img></a> */}
                 <span className='nav-items'>
-                    <Link to="/login" className='btn primary'>Sign in</Link>
+                    <NavMenu></NavMenu>
                 </span>
             </div>
             <div className='nav-border'></div>
